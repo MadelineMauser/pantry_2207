@@ -15,5 +15,8 @@ RSpec.describe CookBook do
     it 'exists' do
       expect(@cookbook).to be_an_instance_of(CookBook)
     end
+    it 'has recipes' do
+      expect(@cookbook.recipes).to eq([])
+    end
   end
 end
