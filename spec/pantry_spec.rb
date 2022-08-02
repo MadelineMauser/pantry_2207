@@ -11,5 +11,8 @@ RSpec.describe Ingredient do
     it 'exists' do
       expect(@pantry).to be_an_instance_of(Pantry)
     end
+    it 'has stock' do
+      expect(@pantry.stock).to eq({})
+    end
   end
 end
