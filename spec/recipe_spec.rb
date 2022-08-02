@@ -11,5 +11,8 @@ RSpec.describe Recipe do
     it 'exists' do
       expect(@recipe1).to be_an_instance_of(Recipe)
     end
+    it 'has a name' do
+      expect(@recipe1.name).to eq("Mac and Cheese")
+    end
   end
 end
