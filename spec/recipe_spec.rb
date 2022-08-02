@@ -46,7 +46,6 @@ RSpec.describe Recipe do
   describe '#total_calories' do
     it 'can sum the calories of all ingredients' do
       @recipe1.add_ingredient(@ingredient1, 2)
-      @recipe1.add_ingredient(@ingredient1, 4)
       @recipe1.add_ingredient(@ingredient2, 8)
 
       expect(@recipe1.total_calories).to eq(440)
