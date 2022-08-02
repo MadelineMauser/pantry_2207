@@ -20,4 +20,14 @@ RSpec.describe Ingredient do
       expect(@pantry.stock_check(@ingredient1)).to eq(0)
     end
   end
+  describe '#restock' do
+    it 'can add quanities of ingredients to the stock' do
+      @pantry.restock(@ingredient1, 5)
+      @pantry.restock(@ingredient1, 10)
+      @pantry.restock(@ingredient2, 7)
+
+      expect(@pantry.stock_check(@ingredient1)).to eq(15)
+      expect(@pantry.stock_check(@ingredient2)).to eq(7)
+    end
+  end
 end
