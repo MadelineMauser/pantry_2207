@@ -1,7 +1,7 @@
 require './lib/ingredient'
 require './lib/pantry'
 
-RSpec.describe Ingredient do
+RSpec.describe Pantry do
   before :all do
     @ingredient1 = Ingredient.new({name: "Cheese", unit: "oz", calories: 50})
     @ingredient2 = Ingredient.new({name: "Macaroni", unit: "oz", calories: 200})
